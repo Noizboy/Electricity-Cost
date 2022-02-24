@@ -144,8 +144,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(255,255,255,0.8);
-  
+  background: rgba(41, 41, 41, 0.8);
+}
+.hide-results
+{
+  display: none;
 }
 
 .wrap-contact3 {
@@ -185,8 +188,30 @@ iframe {
   color: #fff;
   line-height: 1.2;
 }
-
-
+.labeltitle2 {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+}
+.personalbutton
+{
+  border-color: white;
+  background: -webkit-linear-gradient(45deg, #56ab2f, #a8e063);
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.tabledesign
+{
+  background-color: white !important;
+}
+.tablecolor
+{
+  background-color: rgb(221, 221, 221) !important;
+}
 
 /*------------------------------------------------------------------
 [  ]*/
