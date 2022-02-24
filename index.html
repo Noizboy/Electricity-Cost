@@ -35,12 +35,11 @@
 		var yresult = W * T / 1000 * P * 365;
     	// var result = (parseFloat(W) + parseFloat(P) + parseFloat(T));
 
-
-
-		document.getElementById('dresults').innerHTML = dresult + " per day";
-		document.getElementById('wresults').innerHTML = wresult + " per week";
-		document.getElementById('mresults').innerHTML = mresult + " per month";
-		document.getElementById('yresults').innerHTML = yresult + " per year";
+		document.querySelectorAll(".hide-results").forEach(a=>a.style.display = "initial");
+		document.getElementById('dresults').innerHTML = dresult;
+		document.getElementById('wresults').innerHTML = wresult;
+		document.getElementById('mresults').innerHTML = mresult;
+		document.getElementById('yresults').innerHTML = yresult;
 		console.log(result);
 
 	}
@@ -88,47 +87,43 @@
 						<input class="input3" id="usage" type="number" placeholder="">
 						<span class="focus-input3"></span>
 					</div>
-					<label class="labeltitle" id=""><b>Results</b></label>
+					<label class="labeltitle2" id=""><b>Results</b></label>
 					<div class="container">
-					<label class="" id="dresults"></label><br />
-					<label class="" id="wresults"></label><br />
-					<label class="" id="mresults"></label><br />
-					<label class="" id="yresults"></label>
+						<br />
 					
-					<table class="table table-success">
-						<thead>
-						  <tr>
-							<th scope="col">#</th>
-							<th scope="col">First</th>
-							<th scope="col">Last</th>
-							<th scope="col">Handle</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-						  </tr>
-						  <tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						  </tr>
-						  <tr>
-							<th scope="row">3</th>
-							<td colspan="2">Larry the Bird</td>
-							<td>@twitter</td>
-						  </tr>
-						</tbody>
-					  </table>
+					<div class="hide-results">
+						<table class="table table-success tabledesign">
+							<tbody>
+								<tr class="tablecolor">
+									<th scope="row">Period</th>
+									<th>Cost</th>
+								</tr>
+								<tr>
+								<th scope="row">Daily</th>
+								<td id="dresults"></td>
+								</tr>
+								<tr>
+								<th scope="row">Weekly</th>
+								<td id="wresults"></td>
+								</tr>
+								<tr>
+								<th scope="row">Montly</th>
+								<td id="mresults"></td>
+								</tr>
+								<tr>
+								<th scope="row">Yearly</th>
+								<td id="yresults"></td>
+								</tr>
+							</tbody>
+							</table>
+					</div>
 					<br />
 					</div>
 
 					<br />
-					<input class="contact3-form-btn" type="button" value="Calculate" onclick="getprice()" />
+					<div class="d-flex justify-content-center">
+						<input class="personalbutton" type="button" value="Calculate" onclick="getprice()" />
+					</div>
 
 					<!-- <div class="wrap-input3 input3-select">
 						<div>
